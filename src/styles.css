@@ -1,50 +1,61 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Header */
 .header {
+  background-color: #1f2937;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f2937;
-  padding: 1rem 2rem;
-  color: #f9faf8;
 }
-
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: 900;
+}
 .header-links a {
-  margin-left: 1.5rem;
-  text-decoration: none;
   color: #e5e7eb;
+  margin: 0 1rem;
+  text-decoration: none;
   font-size: 18px;
 }
 
 /* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background-color: #1f2937;
   color: #f9faf8;
   padding: 2rem;
 }
-
-.hero-title {
-  font-size: 48px;
+.hero-content {
+  flex: 1;
+  margin-right: 1.5rem;
+}
+.hero-content h1 {
+  font-size: 36px;
   font-weight: 900;
   margin-bottom: 1rem;
 }
-
-.hero-subtext {
+.hero-content p {
   font-size: 18px;
   color: #e5e7eb;
   margin-bottom: 1.5rem;
 }
-
 .btn-signup {
   background: linear-gradient(90deg, #4cafed, #007bff);
   color: #fff;
@@ -57,77 +68,106 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
 }
-
 .btn-signup:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
 }
-
-/* Placeholder for Image */
-.hero-image .image-placeholder {
-  background-color: #e5e7eb;
-  width: 300px;
-  height: 200px;
+.hero-image {
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.hero-image img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px; /* Restrict size to maintain balance */
+  object-fit: cover;
+}
+
+/* Information Section */
+.info-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+.info-section h2 {
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+}
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.info-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Ensures a rectangular shape */
+  object-fit: cover;
+  border-radius: 8px;
+}
+.info-card p {
+  margin-top: 0.5rem;
   font-size: 16px;
   color: #1f2937;
 }
 
-/* Information Section */
-.information {
-  text-align: center;
-  padding: 2rem;
-}
-
-.info-cards {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1rem;
-}
-
-.card {
-  text-align: center;
-}
-
-.card-placeholder {
-  background-color: #e5e7eb;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 1rem;
-}
-
 /* Quote Section */
-.quote {
-  background-color: #e5e7eb;
-  text-align: center;
+.quote-section {
+  background-color: #f3f4f6;
   padding: 2rem;
-}
-
-blockquote {
+  text-align: center;
   font-style: italic;
-  font-size: 36px;
-  color: #1f2937;
+}
+.quote-section p {
+  font-size: 20px;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+.quote-section span {
+  font-size: 18px;
+  color: #6b7280;
 }
 
-/* Call to Action */
+/* Call to Action Section */
 .call-to-action {
-  background-color: #3882f6;
-  text-align: center;
+  background-color: #2563eb;
+  color: #f9faf8;
   padding: 2rem;
-  color: #fff;
+  text-align: center;
 }
-
 .call-to-action h2 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 1rem;
+}
+.call-to-action p {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+}
+.call-to-action button {
+  background: #4cafed;
+  color: #1f2937;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.call-to-action button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 }
 
 /* Footer */
 .footer {
   background-color: #1f2937;
-  color: #f9faf8;
+  color: #e5e7eb;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
+}
+.footer p {
+  margin: 0;
+  font-size: 16px;
 }
