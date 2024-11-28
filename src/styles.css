@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 1rem 2rem;
+  color: #f9faf8;
+}
+
+.header-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.btn-signup {
+  background: linear-gradient(90deg, #4cafed, #007bff);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.btn-signup:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
+}
+
+/* Placeholder for Image */
+.hero-image .image-placeholder {
+  background-color: #e5e7eb;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+/* Information Section */
+.information {
+  text-align: center;
+  padding: 2rem;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-placeholder {
+  background-color: #e5e7eb;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 2rem;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+/* Call to Action */
+.call-to-action {
+  background-color: #3882f6;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+.call-to-action h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 1rem 0;
+}
